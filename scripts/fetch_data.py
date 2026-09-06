@@ -127,6 +127,7 @@ def main():
             "number": card.get("number"),
             "setId": card["set"]["id"],
             "setName": card["set"]["name"],
+            "rarity": card.get("rarity"),
         })
 
     for set_id, set_cards in cards_by_set.items():
