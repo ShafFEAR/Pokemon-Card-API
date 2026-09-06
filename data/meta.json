@@ -1,0 +1,7 @@
+{
+  "generatedAt": "2026-09-06T08:24:25.243322+00:00",
+  "totalSets": 174,
+  "totalCards": 20479,
+  "source": "https://api.pokemontcg.io/v2",
+  "sourceNote": "pokemontcg.io's marketing site now reads 'part of Scrydex'; the API itself was still live and serving fresh price data as of this generation run. This mirror exists so lookups don't depend on that API's availability or rate limits."
+}

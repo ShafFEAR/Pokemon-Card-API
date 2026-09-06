@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pokemon Card Data API</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    max-width: 720px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e8; background: #111; }
+    code, pre { background: #222 !important; color: #e8e8e8; }
+    a { color: #7ab8ff; }
+  }
+  h1 { font-size: 1.5rem; }
+  code { background: #f2f2f2; padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.9em; }
+  pre { background: #f2f2f2; padding: 1rem; border-radius: 8px; overflow-x: auto; }
+  pre code { background: none; padding: 0; }
+  #stats { color: #888; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<h1>Pokemon Card Data API</h1>
+<p>
+  A static mirror of the <a href="https://pokemontcg.io">pokemontcg.io</a> card database,
+  served as plain JSON files from this repo via GitHub Pages. No rate limit, no API key
+  needed to read it.
+</p>
+<p id="stats">Loading dataset stats&hellip;</p>
+
+<h2>Endpoints</h2>
+<pre><code>GET /data/sets/index.json      all sets
+GET /data/sets/{setId}.json    one set + its cards, e.g. /data/sets/base1.json
+GET /data/index/by-name.json   card name -&gt; matching {id, number, setId, setName}[]
+</code></pre>
+
+<h2>Example</h2>
+<pre><code>fetch("./data/sets/base1.json")
+  .then(r =&gt; r.json())
+  .then(d =&gt; console.log(d.set.name, d.cards.length, "cards"));
+</code></pre>
+
+<p>Source, refresh script, and full docs: see the repo's README.</p>
+
+<script>
+fetch("./data/meta.json")
+  .then(r => r.json())
+  .then(m => {
+    document.getElementById("stats").textContent =
+      `${m.totalCards.toLocaleString()} cards across ${m.totalSets} sets · generated ${new Date(m.generatedAt).toLocaleDateString()}`;
+  })
+  .catch(() => {
+    document.getElementById("stats").textContent = "";
+  });
+</script>
+</body>
+</html>
