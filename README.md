@@ -25,6 +25,8 @@ data/
     {setId}.json         { "set": {...}, "cards": [...] } for one set, e.g. base1.json
   index/
     by-name.json         normalized card name -> [{ id, name, number, setId, setName }]
+  psa/                   PSA graded-card prices - see "PSA graded-card prices" below
+  psa-cache.json         a *different*, unrelated cache - see that section too
 ```
 
 Card and set objects are the raw pokemontcg.io API records, unmodified.
@@ -56,6 +58,35 @@ environment to use a free pokemontcg.io key instead (higher rate limit, same out
 
 `.github/workflows/refresh-data.yml` runs this weekly and commits any changes
 automatically, so new sets show up without manual work.
+
+## PSA graded-card prices (`data/psa/`)
+
+A bulk export of PSA's public [Price Guide](https://www.psacard.com/priceguide), scraped
+and matched to this repo's card ids by a separate local project (PSAPokemonTracker, not
+itself published). One-time snapshot for now, not on the weekly schedule - re-export and
+re-commit manually when you want fresher prices.
+
+```
+data/psa/
+  meta.json           source, scrape date, methodology, counts
+  by-card-id.json     mirror card id -> [{ psaSpecId, psaSetId, description, cardNumber,
+                       variantTag, matchConfidence, grades: {"7": .., "8": .., ... } }]
+                       (a list, not a single object - PSA prices print-run variants like
+                       1st Edition / Shadowless / Unlimited separately, so one card id can
+                       have several entries)
+  unmatched.json      PSA variants not confidently linked to a mirror card id (still has
+                       real prices, just include psaSetSlug/psaSetName instead of a card id)
+```
+
+Only grades NM 7 / NM-MT 8 / MT 9 / GEM-MT 10 are here (and not every card has all four)
+- that's the most PSA publishes without an account login. Card matching is heuristic
+(see `matchConfidence`, and `meta.json`'s `matchMethod`), so treat a low-confidence entry
+as a lead to verify, not a certainty.
+
+**Not the same thing as `data/psa-cache.json`** right next to it - that one is an
+incremental cache of real per-scan lookups against PokemonPriceTracker.com, fed by a
+different app (NEW POKEMON SCANNER) via `scripts/sync_psa_cache.py`. Different source,
+different update rhythm, deliberately not merged with this bulk export.
 
 ## Known limitations
 

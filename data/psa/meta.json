@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-09-07T06:01:35.240068+00:00",
+  "source": "https://www.psacard.com/priceguide",
+  "sourceNote": "Scraped from PSA's public Price Guide. PSA only publishes grades NM 7 / NM-MT 8 / MT 9 / GEM-MT 10 there (not every set shows all four), and only those grades appear here - grades 1-6, Authentic, and full auction history require a PSA/Collectors.com account login this project does not automate. This is a separate, independently-sourced dataset from data/psa-cache.json (which is fed by NEW POKEMON SCANNER's live PokemonPriceTracker.com lookups) - different source, different provenance, not merged.",
+  "totalPsaSets": 151,
+  "totalVariants": 7432,
+  "totalPricePoints": 22501,
+  "matchedToCards": 4714,
+  "unmatchedVariants": 2718,
+  "matchMethod": "Heuristic, not exact. Sets matched by release year + set-name token overlap (falling back to comparing card-number checklists when names disagree). Cards within a matched set matched by card number + name overlap. See matchConfidence per entry; a handful of vintage sets needed a manual override (see matcher.MANUAL_SET_OVERRIDES in the source project)."
+}
