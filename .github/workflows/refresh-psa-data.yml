@@ -1,0 +1,35 @@
+name: Refresh PSA price data
+
+on:
+  push: {} # TEMPORARY: triggers an immediate test run; removed once verified working from Actions' IPs
+  schedule:
+    - cron: "0 7 * * 1" # every Monday 07:00 UTC - an hour after the card-data refresh
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Scrape PSA prices and publish
+        run: python scripts/publish_psa_data.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/psa/
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "Refresh PSA price data"
+          git push

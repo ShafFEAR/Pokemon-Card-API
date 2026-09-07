@@ -62,9 +62,13 @@ automatically, so new sets show up without manual work.
 ## PSA graded-card prices (`data/psa/`)
 
 A bulk export of PSA's public [Price Guide](https://www.psacard.com/priceguide), scraped
-and matched to this repo's card ids by a separate local project (PSAPokemonTracker, not
-itself published). One-time snapshot for now, not on the weekly schedule - re-export and
-re-commit manually when you want fresher prices.
+and matched to this repo's card ids. `.github/workflows/refresh-psa-data.yml` runs it
+weekly (Monday 07:00 UTC, an hour after the card-data refresh) and auto-commits any
+changes - the scraper (`scripts/psa/`) and publish step (`scripts/publish_psa_data.py`)
+live in this repo, ported from a separate local project (PSAPokemonTracker) that keeps
+the full queryable price *history* in a local db; this repo only ever holds the latest
+snapshot, so **history here means git commit history** - `git log -- data/psa/` to see
+past snapshots, not a query.
 
 ```
 data/psa/
@@ -81,7 +85,8 @@ data/psa/
 Only grades NM 7 / NM-MT 8 / MT 9 / GEM-MT 10 are here (and not every card has all four)
 - that's the most PSA publishes without an account login. Card matching is heuristic
 (see `matchConfidence`, and `meta.json`'s `matchMethod`), so treat a low-confidence entry
-as a lead to verify, not a certainty.
+as a lead to verify, not a certainty. Manually trigger a refresh anytime from the Actions
+tab (`workflow_dispatch`) instead of waiting for Monday.
 
 **Not the same thing as `data/psa-cache.json`** right next to it - that one is an
 incremental cache of real per-scan lookups against PokemonPriceTracker.com, fed by a
