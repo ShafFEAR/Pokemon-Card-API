@@ -1,0 +1,1118 @@
+{
+  "bwp-BW77": {
+    "grade9": null,
+    "name": "Pikachu",
+    "number": "BW77",
+    "psa10": null,
+    "setName": "BW Black Star Promos",
+    "ungraded": 110.0,
+    "url": "https://www.pricecharting.com/game/pokemon-promo/pikachu-bw77"
+  },
+  "bwp-BW78": {
+    "grade9": null,
+    "name": "Raichu",
+    "number": "BW78",
+    "psa10": null,
+    "setName": "BW Black Star Promos",
+    "ungraded": null,
+    "url": "https://www.pricecharting.com/game/pokemon-promo/raichu-bw78"
+  },
+  "dpp-DP25": {
+    "grade9": 828.9,
+    "name": "Tropical Wind",
+    "number": "DP25",
+    "psa10": 5500.0,
+    "setName": "DP Black Star Promos",
+    "ungraded": 755.99,
+    "url": "https://www.pricecharting.com/game/pokemon-promo/tropical-wind-dp25"
+  },
+  "dpp-DP54": {
+    "grade9": null,
+    "name": "Beginning Door",
+    "number": "DP54",
+    "psa10": null,
+    "setName": "DP Black Star Promos",
+    "ungraded": null,
+    "url": "https://www.pricecharting.com/game/pokemon-promo/beginning-door-dp54"
+  },
+  "dpp-DP55": {
+    "grade9": null,
+    "name": "Ultimate Zone",
+    "number": "DP55",
+    "psa10": null,
+    "setName": "DP Black Star Promos",
+    "ungraded": 174.71,
+    "url": "https://www.pricecharting.com/game/pokemon-promo/ultimate-zone-dp55"
+  },
+  "mcd14-1": {
+    "grade9": 60.0,
+    "name": "Weedle",
+    "number": "1",
+    "psa10": 119.43,
+    "setName": "McDonald's Collection 2014",
+    "ungraded": 10.0,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2014/weedle-1"
+  },
+  "mcd14-10": {
+    "grade9": 24.32,
+    "name": "Bunnelby",
+    "number": "10",
+    "psa10": 59.24,
+    "setName": "McDonald's Collection 2014",
+    "ungraded": 3.26,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2014/bunnelby-10"
+  },
+  "mcd14-11": {
+    "grade9": 31.9,
+    "name": "Fletchling",
+    "number": "11",
+    "psa10": 74.66,
+    "setName": "McDonald's Collection 2014",
+    "ungraded": 4.99,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2014/fletchling-11"
+  },
+  "mcd14-12": {
+    "grade9": 31.95,
+    "name": "Furfrou",
+    "number": "12",
+    "psa10": 74.79,
+    "setName": "McDonald's Collection 2014",
+    "ungraded": 5.08,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2014/furfrou-12"
+  },
+  "mcd14-2": {
+    "grade9": 33.89,
+    "name": "Chespin",
+    "number": "2",
+    "psa10": 78.71,
+    "setName": "McDonald's Collection 2014",
+    "ungraded": 5.5,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2014/chespin-2"
+  },
+  "mcd14-3": {
+    "grade9": 41.56,
+    "name": "Fennekin",
+    "number": "3",
+    "psa10": 94.39,
+    "setName": "McDonald's Collection 2014",
+    "ungraded": 7.59,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2014/fennekin-3"
+  },
+  "mcd14-4": {
+    "grade9": 38.94,
+    "name": "Froakie",
+    "number": "4",
+    "psa10": 87.72,
+    "setName": "McDonald's Collection 2014",
+    "ungraded": 6.44,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2014/froakie-4"
+  },
+  "mcd14-5": {
+    "grade9": 399.99,
+    "name": "Pikachu",
+    "number": "5",
+    "psa10": 480.0,
+    "setName": "McDonald's Collection 2014",
+    "ungraded": 17.75,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2014/pikachu-5"
+  },
+  "mcd14-6": {
+    "grade9": 29.52,
+    "name": "Inkay",
+    "number": "6",
+    "psa10": 69.79,
+    "setName": "McDonald's Collection 2014",
+    "ungraded": 4.45,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2014/inkay-6"
+  },
+  "mcd14-7": {
+    "grade9": 34.09,
+    "name": "Honedge",
+    "number": "7",
+    "psa10": 79.14,
+    "setName": "McDonald's Collection 2014",
+    "ungraded": 5.62,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2014/honedge-7"
+  },
+  "mcd14-8": {
+    "grade9": 43.56,
+    "name": "Snubbull",
+    "number": "8",
+    "psa10": 52.0,
+    "setName": "McDonald's Collection 2014",
+    "ungraded": 7.65,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2014/snubbull-8"
+  },
+  "mcd14-9": {
+    "grade9": 32.8,
+    "name": "Swirlix",
+    "number": "9",
+    "psa10": 76.56,
+    "setName": "McDonald's Collection 2014",
+    "ungraded": 5.71,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2014/swirlix-9"
+  },
+  "mcd15-1": {
+    "grade9": 25.91,
+    "name": "Treecko",
+    "number": "1",
+    "psa10": 59.94,
+    "setName": "McDonald's Collection 2015",
+    "ungraded": 3.84,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2015/treecko-1"
+  },
+  "mcd15-10": {
+    "grade9": 38.27,
+    "name": "Marill",
+    "number": "10",
+    "psa10": 83.22,
+    "setName": "McDonald's Collection 2015",
+    "ungraded": 7.03,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2015/marill-10"
+  },
+  "mcd15-11": {
+    "grade9": 49.72,
+    "name": "Zigzagoon",
+    "number": "11",
+    "psa10": 60.0,
+    "setName": "McDonald's Collection 2015",
+    "ungraded": 4.99,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2015/zigzagoon-11"
+  },
+  "mcd15-12": {
+    "grade9": 18.99,
+    "name": "Skitty",
+    "number": "12",
+    "psa10": 136.0,
+    "setName": "McDonald's Collection 2015",
+    "ungraded": 12.12,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2015/skitty-12"
+  },
+  "mcd15-2": {
+    "grade9": 33.35,
+    "name": "Lotad",
+    "number": "2",
+    "psa10": 73.96,
+    "setName": "McDonald's Collection 2015",
+    "ungraded": 4.2,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2015/lotad-2"
+  },
+  "mcd15-3": {
+    "grade9": 305.0,
+    "name": "Torchic",
+    "number": "3",
+    "psa10": 366.0,
+    "setName": "McDonald's Collection 2015",
+    "ungraded": 7.52,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2015/torchic-3"
+  },
+  "mcd15-4": {
+    "grade9": 12.5,
+    "name": "Staryu",
+    "number": "4",
+    "psa10": 98.89,
+    "setName": "McDonald's Collection 2015",
+    "ungraded": 9.52,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2015/staryu-4"
+  },
+  "mcd15-5": {
+    "grade9": 48.52,
+    "name": "Mudkip",
+    "number": "5",
+    "psa10": 102.51,
+    "setName": "McDonald's Collection 2015",
+    "ungraded": 10.61,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2015/mudkip-5"
+  },
+  "mcd15-6": {
+    "grade9": 99.94,
+    "name": "Pikachu",
+    "number": "6",
+    "psa10": 199.33,
+    "setName": "McDonald's Collection 2015",
+    "ungraded": 20.05,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2015/pikachu-6"
+  },
+  "mcd15-7": {
+    "grade9": 24.25,
+    "name": "Electrike",
+    "number": "7",
+    "psa10": 56.83,
+    "setName": "McDonald's Collection 2015",
+    "ungraded": 3.58,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2015/electrike-7"
+  },
+  "mcd15-8": {
+    "grade9": 28.14,
+    "name": "Rhyhorn",
+    "number": "8",
+    "psa10": 64.14,
+    "setName": "McDonald's Collection 2015",
+    "ungraded": 4.64,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2015/rhyhorn-8"
+  },
+  "mcd15-9": {
+    "grade9": 25.4,
+    "name": "Meditite",
+    "number": "9",
+    "psa10": 58.97,
+    "setName": "McDonald's Collection 2015",
+    "ungraded": 4.0,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2015/meditite-9"
+  },
+  "mcd17-1": {
+    "grade9": 32.08,
+    "name": "Rowlet",
+    "number": "1",
+    "psa10": 68.05,
+    "setName": "McDonald's Collection 2017",
+    "ungraded": 6.86,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2017/rowlet-1"
+  },
+  "mcd17-10": {
+    "grade9": 22.89,
+    "name": "Cutiefly",
+    "number": "10",
+    "psa10": 52.22,
+    "setName": "McDonald's Collection 2017",
+    "ungraded": 3.6,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2017/cutiefly-10"
+  },
+  "mcd17-11": {
+    "grade9": 19.3,
+    "name": "Pikipek",
+    "number": "11",
+    "psa10": 46.03,
+    "setName": "McDonald's Collection 2017",
+    "ungraded": 2.96,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2017/pikipek-11"
+  },
+  "mcd17-12": {
+    "grade9": 29.49,
+    "name": "Yungoos",
+    "number": "12",
+    "psa10": 63.58,
+    "setName": "McDonald's Collection 2017",
+    "ungraded": 6.07,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2017/yungoose-12"
+  },
+  "mcd17-2": {
+    "grade9": 21.38,
+    "name": "Grubbin",
+    "number": "2",
+    "psa10": 49.61,
+    "setName": "McDonald's Collection 2017",
+    "ungraded": 2.88,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2017/grubbin-2"
+  },
+  "mcd17-3": {
+    "grade9": 20.0,
+    "name": "Litten",
+    "number": "3",
+    "psa10": 49.37,
+    "setName": "McDonald's Collection 2017",
+    "ungraded": 3.49,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2017/litten-3"
+  },
+  "mcd17-4": {
+    "grade9": 20.96,
+    "name": "Popplio",
+    "number": "4",
+    "psa10": 48.88,
+    "setName": "McDonald's Collection 2017",
+    "ungraded": 3.74,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2017/popplio-4"
+  },
+  "mcd17-5": {
+    "grade9": 80.85,
+    "name": "Pikachu",
+    "number": "5",
+    "psa10": 147.59,
+    "setName": "McDonald's Collection 2017",
+    "ungraded": 22.59,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2017/pikachu-5"
+  },
+  "mcd17-6": {
+    "grade9": 25.47,
+    "name": "Cosmog",
+    "number": "6",
+    "psa10": 56.66,
+    "setName": "McDonald's Collection 2017",
+    "ungraded": 3.91,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2017/cosmog-6"
+  },
+  "mcd17-7": {
+    "grade9": 25.43,
+    "name": "Crabrawler",
+    "number": "7",
+    "psa10": 56.58,
+    "setName": "McDonald's Collection 2017",
+    "ungraded": 4.8,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2017/crabrawler-7"
+  },
+  "mcd17-8": {
+    "grade9": 19.79,
+    "name": "Alolan Meowth",
+    "number": "8",
+    "psa10": 46.88,
+    "setName": "McDonald's Collection 2017",
+    "ungraded": 3.04,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2017/alolan-meowth-8"
+  },
+  "mcd17-9": {
+    "grade9": 23.44,
+    "name": "Alolan Diglett",
+    "number": "9",
+    "psa10": 53.17,
+    "setName": "McDonald's Collection 2017",
+    "ungraded": 3.77,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2017/alolan-diglett-9"
+  },
+  "mcd18-1": {
+    "grade9": 24.87,
+    "name": "Growlithe",
+    "number": "1",
+    "psa10": 72.85,
+    "setName": "McDonald's Collection 2018",
+    "ungraded": 11.42,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2018/growlithe-1"
+  },
+  "mcd18-10": {
+    "grade9": 1475.48,
+    "name": "Chansey",
+    "number": "10",
+    "psa10": 1771.0,
+    "setName": "McDonald's Collection 2018",
+    "ungraded": 3.78,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2018/chansey-10"
+  },
+  "mcd18-11": {
+    "grade9": 50.83,
+    "name": "Eevee",
+    "number": "11",
+    "psa10": 73.16,
+    "setName": "McDonald's Collection 2018",
+    "ungraded": 12.16,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2018/eevee-11"
+  },
+  "mcd18-12": {
+    "grade9": 136.63,
+    "name": "Porygon",
+    "number": "12",
+    "psa10": 164.0,
+    "setName": "McDonald's Collection 2018",
+    "ungraded": 9.14,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2018/porygon-12"
+  },
+  "mcd18-2": {
+    "grade9": 186.11,
+    "name": "Psyduck",
+    "number": "2",
+    "psa10": 202.69,
+    "setName": "McDonald's Collection 2018",
+    "ungraded": 34.99,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2018/psyduck-2"
+  },
+  "mcd18-3": {
+    "grade9": 26.85,
+    "name": "Horsea",
+    "number": "3",
+    "psa10": 60.52,
+    "setName": "McDonald's Collection 2018",
+    "ungraded": 8.19,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2018/horsea-3"
+  },
+  "mcd18-4": {
+    "grade9": 375.0,
+    "name": "Pikachu",
+    "number": "4",
+    "psa10": 10988.0,
+    "setName": "McDonald's Collection 2018",
+    "ungraded": 18.17,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2018/pikachu-4"
+  },
+  "mcd18-5": {
+    "grade9": 220.0,
+    "name": "Slowpoke",
+    "number": "5",
+    "psa10": 225.0,
+    "setName": "McDonald's Collection 2018",
+    "ungraded": 13.3,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2018/slowpoke-5"
+  },
+  "mcd18-6": {
+    "grade9": 12.77,
+    "name": "Machop",
+    "number": "6",
+    "psa10": 66.95,
+    "setName": "McDonald's Collection 2018",
+    "ungraded": 6.16,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2018/machop-6"
+  },
+  "mcd18-7": {
+    "grade9": 56.0,
+    "name": "Cubone",
+    "number": "7",
+    "psa10": 95.83,
+    "setName": "McDonald's Collection 2018",
+    "ungraded": 14.0,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2018/cubone-7"
+  },
+  "mcd18-8": {
+    "grade9": 8.5,
+    "name": "Magnemite",
+    "number": "8",
+    "psa10": 46.28,
+    "setName": "McDonald's Collection 2018",
+    "ungraded": 3.3,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2018/magnemite-8"
+  },
+  "mcd18-9": {
+    "grade9": 20.0,
+    "name": "Dratini",
+    "number": "9",
+    "psa10": 73.48,
+    "setName": "McDonald's Collection 2018",
+    "ungraded": 8.81,
+    "url": "https://www.pricecharting.com/game/pokemon-mcdonalds-2018/dratini-9"
+  },
+  "sm1-164": {
+    "grade9": 11.0,
+    "name": "Grass Energy",
+    "number": "164",
+    "psa10": 29.99,
+    "setName": "Sun & Moon",
+    "ungraded": 0.4,
+    "url": "https://www.pricecharting.com/game/pokemon-sun-&-moon/grass-energy"
+  },
+  "sm1-165": {
+    "grade9": 10.86,
+    "name": "Fire Energy",
+    "number": "165",
+    "psa10": 50.0,
+    "setName": "Sun & Moon",
+    "ungraded": 0.18,
+    "url": "https://www.pricecharting.com/game/pokemon-sun-&-moon/fire-energy"
+  },
+  "sm1-166": {
+    "grade9": 5.5,
+    "name": "Water Energy",
+    "number": "166",
+    "psa10": 8.5,
+    "setName": "Sun & Moon",
+    "ungraded": 0.25,
+    "url": "https://www.pricecharting.com/game/pokemon-sun-&-moon/water-energy"
+  },
+  "sm1-167": {
+    "grade9": 10.26,
+    "name": "Lightning Energy",
+    "number": "167",
+    "psa10": 12.99,
+    "setName": "Sun & Moon",
+    "ungraded": 0.15,
+    "url": "https://www.pricecharting.com/game/pokemon-sun-&-moon/lightning-energy"
+  },
+  "sm1-168": {
+    "grade9": 7.15,
+    "name": "Psychic Energy",
+    "number": "168",
+    "psa10": 99.99,
+    "setName": "Sun & Moon",
+    "ungraded": 0.33,
+    "url": "https://www.pricecharting.com/game/pokemon-sun-&-moon/psychic-energy"
+  },
+  "sm1-169": {
+    "grade9": null,
+    "name": "Fighting Energy",
+    "number": "169",
+    "psa10": null,
+    "setName": "Sun & Moon",
+    "ungraded": 1.08,
+    "url": "https://www.pricecharting.com/game/pokemon-sun-&-moon/fighting-energy"
+  },
+  "sm1-170": {
+    "grade9": 35.0,
+    "name": "Darkness Energy",
+    "number": "170",
+    "psa10": 42.0,
+    "setName": "Sun & Moon",
+    "ungraded": 0.21,
+    "url": "https://www.pricecharting.com/game/pokemon-sun-&-moon/darkness-energy"
+  },
+  "sm1-171": {
+    "grade9": 18.79,
+    "name": "Metal Energy",
+    "number": "171",
+    "psa10": 73.5,
+    "setName": "Sun & Moon",
+    "ungraded": 0.25,
+    "url": "https://www.pricecharting.com/game/pokemon-sun-&-moon/metal-energy"
+  },
+  "sm1-172": {
+    "grade9": 57.94,
+    "name": "Fairy Energy",
+    "number": "172",
+    "psa10": 66.64,
+    "setName": "Sun & Moon",
+    "ungraded": 0.34,
+    "url": "https://www.pricecharting.com/game/pokemon-sun-&-moon/fairy-energy"
+  },
+  "sve-1": {
+    "grade9": 5.5,
+    "name": "Basic Grass Energy",
+    "number": "1",
+    "psa10": 18.0,
+    "setName": "Scarlet & Violet Energies",
+    "ungraded": 0.15,
+    "url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-energy/basic-grass-energy-1"
+  },
+  "sve-10": {
+    "grade9": 10.37,
+    "name": "Basic Fire Energy",
+    "number": "10",
+    "psa10": 19.4,
+    "setName": "Scarlet & Violet Energies",
+    "ungraded": 0.17,
+    "url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-energy/basic-fire-energy-10"
+  },
+  "sve-11": {
+    "grade9": 10.46,
+    "name": "Basic Water Energy",
+    "number": "11",
+    "psa10": 30.96,
+    "setName": "Scarlet & Violet Energies",
+    "ungraded": 0.2,
+    "url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-energy/basic-water-energy-11"
+  },
+  "sve-12": {
+    "grade9": null,
+    "name": "Basic Lightning Energy",
+    "number": "12",
+    "psa10": null,
+    "setName": "Scarlet & Violet Energies",
+    "ungraded": 0.99,
+    "url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-energy/basic-lightning-energy-12"
+  },
+  "sve-13": {
+    "grade9": 10.33,
+    "name": "Basic Psychic Energy",
+    "number": "13",
+    "psa10": 30.69,
+    "setName": "Scarlet & Violet Energies",
+    "ungraded": 0.17,
+    "url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-energy/basic-psychic-energy-13"
+  },
+  "sve-14": {
+    "grade9": null,
+    "name": "Basic Fighting Energy",
+    "number": "14",
+    "psa10": 36.27,
+    "setName": "Scarlet & Violet Energies",
+    "ungraded": 0.99,
+    "url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-energy/basic-fighting-energy-14"
+  },
+  "sve-15": {
+    "grade9": 7.5,
+    "name": "Basic Darkness Energy",
+    "number": "15",
+    "psa10": 38.09,
+    "setName": "Scarlet & Violet Energies",
+    "ungraded": 0.45,
+    "url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-energy/basic-darkness-energy-15"
+  },
+  "sve-16": {
+    "grade9": 10.79,
+    "name": "Basic Metal Energy",
+    "number": "16",
+    "psa10": 30.61,
+    "setName": "Scarlet & Violet Energies",
+    "ungraded": 0.19,
+    "url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-energy/basic-metal-energy-16"
+  },
+  "sve-2": {
+    "grade9": 10.5,
+    "name": "Basic Fire Energy",
+    "number": "2",
+    "psa10": 30.65,
+    "setName": "Scarlet & Violet Energies",
+    "ungraded": 0.05,
+    "url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-energy/basic-fire-energy-2"
+  },
+  "sve-3": {
+    "grade9": 7.5,
+    "name": "Basic Water Energy",
+    "number": "3",
+    "psa10": 22.0,
+    "setName": "Scarlet & Violet Energies",
+    "ungraded": 0.21,
+    "url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-energy/basic-water-energy-3"
+  },
+  "sve-4": {
+    "grade9": 31.5,
+    "name": "Basic Lightning Energy",
+    "number": "4",
+    "psa10": 38.0,
+    "setName": "Scarlet & Violet Energies",
+    "ungraded": 0.12,
+    "url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-energy/basic-lightning-energy-4"
+  },
+  "sve-5": {
+    "grade9": 10.22,
+    "name": "Basic Psychic Energy",
+    "number": "5",
+    "psa10": 30.46,
+    "setName": "Scarlet & Violet Energies",
+    "ungraded": 0.27,
+    "url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-energy/basic-psychic-energy-5"
+  },
+  "sve-6": {
+    "grade9": 10.41,
+    "name": "Basic Fighting Energy",
+    "number": "6",
+    "psa10": 30.84,
+    "setName": "Scarlet & Violet Energies",
+    "ungraded": 0.17,
+    "url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-energy/basic-fighting-energy-6"
+  },
+  "sve-7": {
+    "grade9": 19.13,
+    "name": "Basic Darkness Energy",
+    "number": "7",
+    "psa10": 30.31,
+    "setName": "Scarlet & Violet Energies",
+    "ungraded": 0.28,
+    "url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-energy/basic-darkness-energy-7"
+  },
+  "sve-8": {
+    "grade9": 10.13,
+    "name": "Basic Metal Energy",
+    "number": "8",
+    "psa10": 30.27,
+    "setName": "Scarlet & Violet Energies",
+    "ungraded": 0.09,
+    "url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-energy/basic-metal-energy-8"
+  },
+  "sve-9": {
+    "grade9": 10.33,
+    "name": "Basic Grass Energy",
+    "number": "9",
+    "psa10": 30.17,
+    "setName": "Scarlet & Violet Energies",
+    "ungraded": 0.2,
+    "url": "https://www.pricecharting.com/game/pokemon-scarlet-&-violet-energy/basic-grass-energy-9"
+  },
+  "tk1a-1": {
+    "grade9": 12.71,
+    "name": "Bagon",
+    "number": "1",
+    "psa10": 38.65,
+    "setName": "EX Trainer Kit Latias",
+    "ungraded": 0.3,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/bagon-1"
+  },
+  "tk1a-10": {
+    "grade9": null,
+    "name": "Fire Energy",
+    "number": "10",
+    "psa10": null,
+    "setName": "EX Trainer Kit Latias",
+    "ungraded": 0.24,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/fire-energy-10"
+  },
+  "tk1a-2": {
+    "grade9": 14.98,
+    "name": "Combusken",
+    "number": "2",
+    "psa10": 45.87,
+    "setName": "EX Trainer Kit Latias",
+    "ungraded": 0.6,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/combusken-2"
+  },
+  "tk1a-3": {
+    "grade9": 13.17,
+    "name": "Delcatty",
+    "number": "3",
+    "psa10": 40.09,
+    "setName": "EX Trainer Kit Latias",
+    "ungraded": 0.37,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/delcatty-3"
+  },
+  "tk1a-4": {
+    "grade9": 705.0,
+    "name": "Latias",
+    "number": "4",
+    "psa10": 1368.12,
+    "setName": "EX Trainer Kit Latias",
+    "ungraded": 17.62,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/latias-4"
+  },
+  "tk1a-5": {
+    "grade9": 17.42,
+    "name": "Numel",
+    "number": "5",
+    "psa10": 53.64,
+    "setName": "EX Trainer Kit Latias",
+    "ungraded": 0.82,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/numel-5"
+  },
+  "tk1a-6": {
+    "grade9": 16.42,
+    "name": "Skitty",
+    "number": "6",
+    "psa10": 50.47,
+    "setName": "EX Trainer Kit Latias",
+    "ungraded": 0.71,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/skitty-6"
+  },
+  "tk1a-7": {
+    "grade9": 13.98,
+    "name": "Torchic",
+    "number": "7",
+    "psa10": 42.69,
+    "setName": "EX Trainer Kit Latias",
+    "ungraded": 0.4,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/torchic-7"
+  },
+  "tk1a-8": {
+    "grade9": null,
+    "name": "Potion",
+    "number": "8",
+    "psa10": null,
+    "setName": "EX Trainer Kit Latias",
+    "ungraded": 0.5,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/potion-8"
+  },
+  "tk1a-9": {
+    "grade9": null,
+    "name": "Energy Search",
+    "number": "9",
+    "psa10": null,
+    "setName": "EX Trainer Kit Latias",
+    "ungraded": 0.22,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/energy-search-9"
+  },
+  "tk1b-1": {
+    "grade9": 11.81,
+    "name": "Electrike",
+    "number": "1",
+    "psa10": 35.77,
+    "setName": "EX Trainer Kit Latios",
+    "ungraded": 0.2,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/electrike-1"
+  },
+  "tk1b-10": {
+    "grade9": null,
+    "name": "Lightning Energy",
+    "number": "10",
+    "psa10": null,
+    "setName": "EX Trainer Kit Latios",
+    "ungraded": 0.39,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/lightning-energy-10"
+  },
+  "tk1b-2": {
+    "grade9": 474.0,
+    "name": "Latios",
+    "number": "2",
+    "psa10": 569.0,
+    "setName": "EX Trainer Kit Latios",
+    "ungraded": 7.63,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/latios-2"
+  },
+  "tk1b-3": {
+    "grade9": 14.07,
+    "name": "Linoone",
+    "number": "3",
+    "psa10": 42.97,
+    "setName": "EX Trainer Kit Latios",
+    "ungraded": 0.45,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/linoone-3"
+  },
+  "tk1b-4": {
+    "grade9": 13.8,
+    "name": "Magnemite",
+    "number": "4",
+    "psa10": 42.12,
+    "setName": "EX Trainer Kit Latios",
+    "ungraded": 0.7,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/magnemite-4"
+  },
+  "tk1b-5": {
+    "grade9": 14.43,
+    "name": "Magneton",
+    "number": "5",
+    "psa10": 44.13,
+    "setName": "EX Trainer Kit Latios",
+    "ungraded": 0.48,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/magneton-5"
+  },
+  "tk1b-6": {
+    "grade9": 60.78,
+    "name": "Pikachu",
+    "number": "6",
+    "psa10": 191.87,
+    "setName": "EX Trainer Kit Latios",
+    "ungraded": 5.5,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/pikachu-6"
+  },
+  "tk1b-7": {
+    "grade9": 13.62,
+    "name": "Zigzagoon",
+    "number": "7",
+    "psa10": 41.53,
+    "setName": "EX Trainer Kit Latios",
+    "ungraded": 0.4,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/zigzagoon-7"
+  },
+  "tk1b-8": {
+    "grade9": null,
+    "name": "Potion",
+    "number": "8",
+    "psa10": null,
+    "setName": "EX Trainer Kit Latios",
+    "ungraded": 0.5,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/potion-8"
+  },
+  "tk1b-9": {
+    "grade9": null,
+    "name": "Energy Search",
+    "number": "9",
+    "psa10": null,
+    "setName": "EX Trainer Kit Latios",
+    "ungraded": 0.22,
+    "url": "https://www.pricecharting.com/game/pokemon-ex-latias-&-latios/energy-search-9"
+  },
+  "tk2a-1": {
+    "grade9": 12.99,
+    "name": "Beldum",
+    "number": "1",
+    "psa10": 38.97,
+    "setName": "EX Trainer Kit 2 Plusle",
+    "ungraded": 0.37,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/beldum-1"
+  },
+  "tk2a-10": {
+    "grade9": 19.95,
+    "name": "Professor Cozmo's Discovery",
+    "number": "10",
+    "psa10": 59.84,
+    "setName": "EX Trainer Kit 2 Plusle",
+    "ungraded": 1.23,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/professor-cozmo%27s-discovery-10"
+  },
+  "tk2a-11": {
+    "grade9": 14.05,
+    "name": "Lightning Energy",
+    "number": "11",
+    "psa10": 42.15,
+    "setName": "EX Trainer Kit 2 Plusle",
+    "ungraded": 0.5,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/lightning-energy-11"
+  },
+  "tk2a-12": {
+    "grade9": 13.0,
+    "name": "Psychic Energy",
+    "number": "12",
+    "psa10": 38.99,
+    "setName": "EX Trainer Kit 2 Plusle",
+    "ungraded": 0.3,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/psychic-energy-12"
+  },
+  "tk2a-2": {
+    "grade9": 18.26,
+    "name": "Electrike",
+    "number": "2",
+    "psa10": 54.76,
+    "setName": "EX Trainer Kit 2 Plusle",
+    "ungraded": 1.03,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/electrike-2"
+  },
+  "tk2a-3": {
+    "grade9": 14.86,
+    "name": "Grumpig",
+    "number": "3",
+    "psa10": 44.58,
+    "setName": "EX Trainer Kit 2 Plusle",
+    "ungraded": 0.84,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/grumpig-3"
+  },
+  "tk2a-4": {
+    "grade9": 18.01,
+    "name": "Meowth",
+    "number": "4",
+    "psa10": 54.03,
+    "setName": "EX Trainer Kit 2 Plusle",
+    "ungraded": 0.89,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/meowth-4"
+  },
+  "tk2a-5": {
+    "grade9": null,
+    "name": "Metang",
+    "number": "5",
+    "psa10": null,
+    "setName": "EX Trainer Kit 2 Plusle",
+    "ungraded": 1.43,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/metang-5"
+  },
+  "tk2a-6": {
+    "grade9": 275.0,
+    "name": "Plusle",
+    "number": "6",
+    "psa10": 390.16,
+    "setName": "EX Trainer Kit 2 Plusle",
+    "ungraded": 16.29,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/plusle-6"
+  },
+  "tk2a-7": {
+    "grade9": 12.27,
+    "name": "Spoink",
+    "number": "7",
+    "psa10": 36.79,
+    "setName": "EX Trainer Kit 2 Plusle",
+    "ungraded": 0.28,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/spoink-7"
+  },
+  "tk2a-8": {
+    "grade9": 12.91,
+    "name": "Energy Search",
+    "number": "8",
+    "psa10": 38.73,
+    "setName": "EX Trainer Kit 2 Plusle",
+    "ungraded": 0.37,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/energy-search-8"
+  },
+  "tk2a-9": {
+    "grade9": 12.27,
+    "name": "Potion",
+    "number": "9",
+    "psa10": 36.8,
+    "setName": "EX Trainer Kit 2 Plusle",
+    "ungraded": 0.28,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/potion-9"
+  },
+  "tk2b-1": {
+    "grade9": 49.98,
+    "name": "Arcanine",
+    "number": "1",
+    "psa10": 149.9,
+    "setName": "EX Trainer Kit 2 Minun",
+    "ungraded": 4.94,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/arcanine-1"
+  },
+  "tk2b-10": {
+    "grade9": null,
+    "name": "Potion",
+    "number": "10",
+    "psa10": null,
+    "setName": "EX Trainer Kit 2 Minun",
+    "ungraded": 0.21,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/potion-10"
+  },
+  "tk2b-11": {
+    "grade9": 14.05,
+    "name": "Fire Energy",
+    "number": "11",
+    "psa10": 42.14,
+    "setName": "EX Trainer Kit 2 Minun",
+    "ungraded": 0.43,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/fire-energy-11"
+  },
+  "tk2b-12": {
+    "grade9": null,
+    "name": "Lightning Energy",
+    "number": "12",
+    "psa10": null,
+    "setName": "EX Trainer Kit 2 Minun",
+    "ungraded": 0.34,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/lightning-energy-12"
+  },
+  "tk2b-2": {
+    "grade9": 30.25,
+    "name": "Charmander",
+    "number": "2",
+    "psa10": 90.74,
+    "setName": "EX Trainer Kit 2 Minun",
+    "ungraded": 1.52,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/charmander-2"
+  },
+  "tk2b-3": {
+    "grade9": 27.74,
+    "name": "Charmeleon",
+    "number": "3",
+    "psa10": 64.95,
+    "setName": "EX Trainer Kit 2 Minun",
+    "ungraded": 2.19,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/charmeleon-3"
+  },
+  "tk2b-4": {
+    "grade9": 16.4,
+    "name": "Growlithe",
+    "number": "4",
+    "psa10": 49.19,
+    "setName": "EX Trainer Kit 2 Minun",
+    "ungraded": 0.85,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/growlithe-4"
+  },
+  "tk2b-5": {
+    "grade9": 15.1,
+    "name": "Mareep",
+    "number": "5",
+    "psa10": 45.31,
+    "setName": "EX Trainer Kit 2 Minun",
+    "ungraded": 0.63,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/mareep-5"
+  },
+  "tk2b-6": {
+    "grade9": 191.16,
+    "name": "Minun",
+    "number": "6",
+    "psa10": 573.49,
+    "setName": "EX Trainer Kit 2 Minun",
+    "ungraded": 22.37,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/minun-6"
+  },
+  "tk2b-7": {
+    "grade9": 18.02,
+    "name": "Vulpix",
+    "number": "7",
+    "psa10": 54.04,
+    "setName": "EX Trainer Kit 2 Minun",
+    "ungraded": 0.97,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/vulpix-7"
+  },
+  "tk2b-8": {
+    "grade9": null,
+    "name": "Celio's Network",
+    "number": "8",
+    "psa10": null,
+    "setName": "EX Trainer Kit 2 Minun",
+    "ungraded": 0.5,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/celio%27s-network-8"
+  },
+  "tk2b-9": {
+    "grade9": null,
+    "name": "Energy Search",
+    "number": "9",
+    "psa10": null,
+    "setName": "EX Trainer Kit 2 Minun",
+    "ungraded": 0.34,
+    "url": "https://www.pricecharting.com/game/pokemon-plusle-&-minun/energy-search-9"
+  },
+  "xy8-146a": {
+    "grade9": null,
+    "name": "Professor's Letter",
+    "number": "146a",
+    "psa10": null,
+    "setName": "BREAKthrough",
+    "ungraded": 5.63,
+    "url": "https://www.pricecharting.com/game/pokemon-breakthrough/professor%27s-letter-146a"
+  },
+  "xy9-98a": {
+    "grade9": null,
+    "name": "Delinquent",
+    "number": "98a",
+    "psa10": null,
+    "setName": "BREAKpoint",
+    "ungraded": 12.28,
+    "url": "https://www.pricecharting.com/game/pokemon-breakpoint/delinquent-98a"
+  }
+}

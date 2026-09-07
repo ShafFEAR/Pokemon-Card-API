@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-09-07T18:51:02.787384+00:00",
+  "source": "https://www.pricecharting.com/",
+  "method": "Manually targeted, not a bulk scrape - looked up individually, one product page at a time via normal browsing, only for the specific cards confirmed to have no loose (TCGplayer/Cardmarket) or PSA price anywhere else in this mirror. Not on an automated refresh schedule, unlike data/sets/ and data/psa/ - re-run manually if this snapshot goes stale.",
+  "totalMatched": 124,
+  "totalUnmatched": 1,
+  "priceFields": {
+    "ungraded": "current ungraded market price",
+    "grade9": "PriceCharting's own \"Grade 9\" price point",
+    "psa10": "PriceCharting's own \"PSA 10\" price point"
+  },
+  "note": "Two entries (McDonald's 2018 Pikachu #4 and Chansey #10) show large jumps between grade9 and psa10 that look like thin-sample anomalies rather than real market consensus - spot-check on the live site before relying on those two specifically."
+}

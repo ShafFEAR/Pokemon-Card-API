@@ -27,6 +27,7 @@ data/
     by-name.json         normalized card name -> [{ id, name, number, setId, setName }]
   psa/                   PSA graded-card prices - see "PSA graded-card prices" below
   psa-cache.json         a *different*, unrelated cache - see that section too
+  pricecharting/         supplementary prices for cards with no other price - see below
 ```
 
 Card and set objects are the raw pokemontcg.io API records, unmodified.
@@ -92,6 +93,32 @@ tab (`workflow_dispatch`) instead of waiting for Monday.
 incremental cache of real per-scan lookups against PokemonPriceTracker.com, fed by a
 different app (NEW POKEMON SCANNER) via `scripts/sync_psa_cache.py`. Different source,
 different update rhythm, deliberately not merged with this bulk export.
+
+## PriceCharting supplementary prices (`data/pricecharting/`)
+
+Prices for the specific cards that have **neither** a loose (TCGplayer/Cardmarket) price
+in `data/sets/` **nor** a PSA price in `data/psa/` - mostly niche, low-circulation
+products (McDonald's promos, theme-deck exclusives, basic energies) that those two
+sources don't individually track. From [PriceCharting](https://www.pricecharting.com/).
+
+```
+data/pricecharting/
+  meta.json           source, method, counts, known-caveat notes
+  by-card-id.json      mirror card id -> { name, number, setName, url, ungraded,
+                        grade9, psa10 }
+  unmatched.json       cards that couldn't be confidently matched to one PriceCharting
+                        product, with why - e.g. a card printed twice under the same
+                        collector number with two different values, no way to tell
+                        which from our data alone
+```
+
+**Different from the other two data sources in an important way**: this is a small,
+manually-targeted, one-time lookup (124 cards, 2026-09-07), not an automated bulk export
+- PriceCharting's own API/CSV bulk-download requires a paid subscription, so unlike
+`data/sets/` and `data/psa/` there's no scheduled workflow keeping this fresh. Re-run
+manually (look up the specific cards, rebuild the JSON) if this goes stale or you want to
+extend coverage. Two entries have prices that look like thin-sample anomalies rather than
+real market consensus - see `meta.json`'s `note` field before relying on those two.
 
 ## Known limitations
 
