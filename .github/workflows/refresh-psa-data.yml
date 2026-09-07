@@ -1,7 +1,6 @@
 name: Refresh PSA price data
 
 on:
-  push: {} # TEMPORARY: triggers an immediate test run; removed once verified working from Actions' IPs
   schedule:
     - cron: "0 7 * * 1" # every Monday 07:00 UTC - an hour after the card-data refresh
   workflow_dispatch: {}
