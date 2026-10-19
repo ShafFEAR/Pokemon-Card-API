@@ -27,7 +27,7 @@ data/
     by-name.json         normalized card name -> [{ id, name, number, setId, setName }]
   psa/                   PSA graded-card prices - see "PSA graded-card prices" below
   psa-cache.json         a *different*, unrelated cache - see that section too
-  pricecharting/         supplementary prices for cards with no other price - see below
+  pricecharting/         PriceCharting ungraded / Grade 9 / PSA 10 prices (Scarlet & Violet and Sword & Shield eras) - see below
 ```
 
 Card and set objects are the raw pokemontcg.io API records, unmodified.
@@ -94,31 +94,42 @@ incremental cache of real per-scan lookups against PokemonPriceTracker.com, fed 
 different app (NEW POKEMON SCANNER) via `scripts/sync_psa_cache.py`. Different source,
 different update rhythm, deliberately not merged with this bulk export.
 
-## PriceCharting supplementary prices (`data/pricecharting/`)
+## PriceCharting prices (`data/pricecharting/`)
 
-Prices for the specific cards that have **neither** a loose (TCGplayer/Cardmarket) price
-in `data/sets/` **nor** a PSA price in `data/psa/` - mostly niche, low-circulation
-products (McDonald's promos, theme-deck exclusives, basic energies) that those two
-sources don't individually track. From [PriceCharting](https://www.pricecharting.com/).
+Ungraded, Grade 9 and PSA 10 prices from [PriceCharting](https://www.pricecharting.com/)
+for every **Scarlet & Violet-era and Sword & Shield-era** card in this mirror (about 7,300
+cards, 43 sets - see `meta.json`'s `bySet`), plus 108 older niche cards (McDonald's promos,
+theme-deck exclusives, ...) that no other source here prices. **Prices are PriceCharting's;
+each entry's `url` is the PriceCharting product page it was read from - please link back
+to it when you show them, and check PriceCharting's terms before reusing the data
+elsewhere.**
+
+Why it exists: PSA's public Price Guide (`data/psa/`) has no Pokemon sets after
+2021 and its published numbers are frozen, so modern cards have no PSA price at all.
+PriceCharting is more recent, so a scanner can show it next to - or instead of - PSA.
 
 ```
 data/pricecharting/
-  meta.json           source, method, counts, known-caveat notes
+  meta.json           source, attribution, method, read date, per-set counts, caveats
   by-card-id.json      mirror card id -> { name, number, setName, url, ungraded,
-                        grade9, psa10 }
-  unmatched.json       cards that couldn't be confidently matched to one PriceCharting
-                        product, with why - e.g. a card printed twice under the same
-                        collector number with two different values, no way to tell
-                        which from our data alone
+                        grade9, psa10 }  (null = PriceCharting has no price there)
+  unmatched.json       cards with no PriceCharting product found (or that couldn't be
+                        matched confidently), with why
 ```
 
-**Different from the other two data sources in an important way**: this is a small,
-manually-targeted, one-time lookup (124 cards, 2026-09-07), not an automated bulk export
-- PriceCharting's own API/CSV bulk-download requires a paid subscription, so unlike
-`data/sets/` and `data/psa/` there's no scheduled workflow keeping this fresh. Re-run
-manually (look up the specific cards, rebuild the JSON) if this goes stale or you want to
-extend coverage. Two entries have prices that look like thin-sample anomalies rather than
-real market consensus - see `meta.json`'s `note` field before relying on those two.
+**Different from the other two data sources in an important way**: this is a manual
+snapshot (prices read 2026-10-18), not an automated bulk export. PriceCharting's own
+API/CSV bulk download requires a paid subscription and none was used: the set listing
+pages were loaded one at a time in a normal browser session and the visible price
+columns copied (checksum-verified) and matched to card ids by set + collector number +
+name. So unlike `data/sets/` and `data/psa/` there's no scheduled workflow keeping it
+fresh - redo the pages when it goes stale, or extend coverage to newer sets
+(Mega Evolution-era sets aren't included yet).
+
+Only the plain card is recorded per id (not reverse-holo / Poke Ball / Master Ball /
+stamped / prize-pack / jumbo variants), and Grade 9 / PSA 10 for rarely-traded cards can
+rest on a few sales, so big jumps (e.g. a $0.25 card with a $325 Grade 9) are often
+thin-sample noise - see `meta.json`'s `note`.
 
 ## Known limitations
 

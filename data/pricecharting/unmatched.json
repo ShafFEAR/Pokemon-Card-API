@@ -5,5 +5,68 @@
     "number": "103",
     "setName": "Aquapolis",
     "reason": "PriceCharting splits this card into two distinct products with different artwork/values within the same pokemon-aquapolis family: 'Porygon #103a' (ungraded $6.45, PSA10 $101.76) and 'Porygon #103b' (ungraded $4.94, PSA10 $227.64). Our source lists only a plain number 103 with no way to determine which variant it corresponds to. This is a known e-Card era (Aquapolis/Skyridge) print quirk where some commons received two different pieces of artwork under one collector number. Declined to guess since the two candidates have meaningfully different prices - a wrong pick would misrepresent the card's value."
+  },
+  {
+    "id": "swsh5-174",
+    "name": "Korrina's Focus",
+    "number": "174",
+    "setName": "Battle Styles",
+    "reason": "No product with this name and collector number was found on PriceCharting's listing page for this set (page read 2026-10-18), so no price is recorded."
+  },
+  {
+    "id": "swsh8-185",
+    "name": "Genesect V",
+    "number": "185",
+    "setName": "Fusion Strike",
+    "reason": "No product with this name and collector number was found on PriceCharting's listing page for this set (page read 2026-10-18), so no price is recorded."
+  },
+  {
+    "id": "swshp-SWSH144",
+    "name": "Greninja ★",
+    "number": "SWSH144",
+    "setName": "SWSH Black Star Promos",
+    "reason": "No product with this name and collector number was found on PriceCharting's listing page for this set (page read 2026-10-18), so no price is recorded."
+  },
+  {
+    "id": "swshp-SWSH153",
+    "name": "Pikachu",
+    "number": "SWSH153",
+    "setName": "SWSH Black Star Promos",
+    "reason": "No product with this name and collector number was found on PriceCharting's listing page for this set (page read 2026-10-18), so no price is recorded."
+  },
+  {
+    "id": "svp-167",
+    "name": "Flareon",
+    "number": "167",
+    "setName": "Scarlet & Violet Promos",
+    "reason": "No product with this name and collector number was found on PriceCharting's listing page for this set (page read 2026-10-18), so no price is recorded."
+  },
+  {
+    "id": "svp-168",
+    "name": "Vaporeon",
+    "number": "168",
+    "setName": "Scarlet & Violet Promos",
+    "reason": "No product with this name and collector number was found on PriceCharting's listing page for this set (page read 2026-10-18), so no price is recorded."
+  },
+  {
+    "id": "svp-169",
+    "name": "Jolteon",
+    "number": "169",
+    "setName": "Scarlet & Violet Promos",
+    "reason": "No product with this name and collector number was found on PriceCharting's listing page for this set (page read 2026-10-18), so no price is recorded."
+  },
+  {
+    "id": "svp-27",
+    "name": "Pikachu",
+    "number": "27",
+    "setName": "Scarlet & Violet Black Star Promos",
+    "reason": "No product with this name and collector number was found on PriceCharting's listing page for this set (page read 2026-10-18), so no price is recorded."
+  },
+  {
+    "id": "svp-45",
+    "name": "Paradise Resort",
+    "number": "45",
+    "setName": "Scarlet & Violet Black Star Promos",
+    "reason": "No product with this name and collector number was found on PriceCharting's listing page for this set (page read 2026-10-18), so no price is recorded."
   }
 ]

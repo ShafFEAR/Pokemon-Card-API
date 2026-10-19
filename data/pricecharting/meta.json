@@ -1,13 +1,233 @@
 {
-  "generatedAt": "2026-09-07T18:51:02.787384+00:00",
+  "generatedAt": "2026-10-19T22:49:56.029551+00:00",
+  "pricesReadOn": "2026-10-18",
   "source": "https://www.pricecharting.com/",
-  "method": "Manually targeted, not a bulk scrape - looked up individually, one product page at a time via normal browsing, only for the specific cards confirmed to have no loose (TCGplayer/Cardmarket) or PSA price anywhere else in this mirror. Not on an automated refresh schedule, unlike data/sets/ and data/psa/ - re-run manually if this snapshot goes stale.",
-  "totalMatched": 124,
-  "totalUnmatched": 1,
+  "attribution": "Prices are from PriceCharting (https://www.pricecharting.com/). Every entry's `url` is the PriceCharting product page it was read from - link back to it when you show these prices.",
+  "method": "Read from PriceCharting's public set listing pages (one page per set, 35 pages, plus its Pokemon Promo page for SWSH/SVP promos), loaded one at a time in a normal browser session; the page's own 'load more rows' requests were used for long sets, paced about 2 seconds apart. The visible Ungraded / Grade 9 / PSA 10 price columns were copied as shown (checksum-verified, no retyping) and matched to this mirror's card ids by set + collector number + name. Not an API or bulk download, no PriceCharting account or subscription, and not on an automated refresh schedule (unlike data/sets/ and data/psa/) - re-run manually when it goes stale. The 124 cards added on 2026-09-07 were looked up individually, one product page at a time; any of those that fall in the sets above (the 16 Scarlet & Violet Energy cards) were refreshed by this pass.",
+  "coverage": "Every Scarlet & Violet-era set in the mirror (Scarlet & Violet through Destined Rivals, Black Bolt, White Flare, SVE energies, SVP promos) and every Sword & Shield-era set (Sword & Shield through Crown Zenith, including Celebrations, Pokemon GO, Trainer Gallery / Galarian Gallery / Shiny Vault subsets and SWSH promos). Mega Evolution-era sets and older eras are not covered yet, except the 108 individually looked up cards.",
+  "totalMatched": 7396,
+  "totalUnmatched": 10,
+  "bySet": {
+    "sv1": {
+      "name": "Scarlet & Violet",
+      "cards": 258,
+      "withPrice": 258
+    },
+    "cel25": {
+      "name": "Celebrations",
+      "cards": 25,
+      "withPrice": 25
+    },
+    "cel25c": {
+      "name": "Celebrations: Classic Collection",
+      "cards": 25,
+      "withPrice": 25
+    },
+    "pgo": {
+      "name": "Pokémon GO",
+      "cards": 88,
+      "withPrice": 88
+    },
+    "rsv10pt5": {
+      "name": "White Flare",
+      "cards": 173,
+      "withPrice": 173
+    },
+    "sv10": {
+      "name": "Destined Rivals",
+      "cards": 244,
+      "withPrice": 244
+    },
+    "sv2": {
+      "name": "Paldea Evolved",
+      "cards": 279,
+      "withPrice": 279
+    },
+    "sv3": {
+      "name": "Obsidian Flames",
+      "cards": 230,
+      "withPrice": 230
+    },
+    "sv3pt5": {
+      "name": "151",
+      "cards": 207,
+      "withPrice": 207
+    },
+    "sv4": {
+      "name": "Paradox Rift",
+      "cards": 266,
+      "withPrice": 266
+    },
+    "sv4pt5": {
+      "name": "Paldean Fates",
+      "cards": 245,
+      "withPrice": 245
+    },
+    "sv5": {
+      "name": "Temporal Forces",
+      "cards": 218,
+      "withPrice": 218
+    },
+    "sv6": {
+      "name": "Twilight Masquerade",
+      "cards": 226,
+      "withPrice": 226
+    },
+    "sv6pt5": {
+      "name": "Shrouded Fable",
+      "cards": 99,
+      "withPrice": 99
+    },
+    "sv7": {
+      "name": "Stellar Crown",
+      "cards": 175,
+      "withPrice": 175
+    },
+    "sv8": {
+      "name": "Surging Sparks",
+      "cards": 252,
+      "withPrice": 252
+    },
+    "sv8pt5": {
+      "name": "Prismatic Evolutions",
+      "cards": 180,
+      "withPrice": 180
+    },
+    "sv9": {
+      "name": "Journey Together",
+      "cards": 190,
+      "withPrice": 190
+    },
+    "sve": {
+      "name": "Scarlet & Violet Energies",
+      "cards": 16,
+      "withPrice": 16
+    },
+    "svp": {
+      "name": "Scarlet & Violet Promos",
+      "cards": 200,
+      "withPrice": 195
+    },
+    "swsh1": {
+      "name": "Sword & Shield",
+      "cards": 216,
+      "withPrice": 216
+    },
+    "swsh10": {
+      "name": "Astral Radiance",
+      "cards": 216,
+      "withPrice": 216
+    },
+    "swsh10tg": {
+      "name": "Astral Radiance Trainer Gallery",
+      "cards": 30,
+      "withPrice": 30
+    },
+    "swsh11": {
+      "name": "Lost Origin",
+      "cards": 217,
+      "withPrice": 217
+    },
+    "swsh11tg": {
+      "name": "Lost Origin Trainer Gallery",
+      "cards": 30,
+      "withPrice": 30
+    },
+    "swsh12": {
+      "name": "Silver Tempest",
+      "cards": 215,
+      "withPrice": 215
+    },
+    "swsh12pt5": {
+      "name": "Crown Zenith",
+      "cards": 160,
+      "withPrice": 160
+    },
+    "swsh12pt5gg": {
+      "name": "Crown Zenith Galarian Gallery",
+      "cards": 70,
+      "withPrice": 70
+    },
+    "swsh12tg": {
+      "name": "Silver Tempest Trainer Gallery",
+      "cards": 30,
+      "withPrice": 30
+    },
+    "swsh2": {
+      "name": "Rebel Clash",
+      "cards": 209,
+      "withPrice": 209
+    },
+    "swsh3": {
+      "name": "Darkness Ablaze",
+      "cards": 201,
+      "withPrice": 201
+    },
+    "swsh35": {
+      "name": "Champion's Path",
+      "cards": 80,
+      "withPrice": 80
+    },
+    "swsh4": {
+      "name": "Vivid Voltage",
+      "cards": 203,
+      "withPrice": 203
+    },
+    "swsh45": {
+      "name": "Shining Fates",
+      "cards": 73,
+      "withPrice": 73
+    },
+    "swsh45sv": {
+      "name": "Shining Fates Shiny Vault",
+      "cards": 122,
+      "withPrice": 122
+    },
+    "swsh5": {
+      "name": "Battle Styles",
+      "cards": 183,
+      "withPrice": 182
+    },
+    "swsh6": {
+      "name": "Chilling Reign",
+      "cards": 233,
+      "withPrice": 233
+    },
+    "swsh7": {
+      "name": "Evolving Skies",
+      "cards": 237,
+      "withPrice": 237
+    },
+    "swsh8": {
+      "name": "Fusion Strike",
+      "cards": 284,
+      "withPrice": 283
+    },
+    "swsh9": {
+      "name": "Brilliant Stars",
+      "cards": 186,
+      "withPrice": 186
+    },
+    "swsh9tg": {
+      "name": "Brilliant Stars Trainer Gallery",
+      "cards": 30,
+      "withPrice": 30
+    },
+    "swshp": {
+      "name": "SWSH Black Star Promos",
+      "cards": 304,
+      "withPrice": 302
+    },
+    "zsv10pt5": {
+      "name": "Black Bolt",
+      "cards": 172,
+      "withPrice": 172
+    }
+  },
   "priceFields": {
     "ungraded": "current ungraded market price",
     "grade9": "PriceCharting's own \"Grade 9\" price point",
     "psa10": "PriceCharting's own \"PSA 10\" price point"
   },
-  "note": "Two entries (McDonald's 2018 Pikachu #4 and Chansey #10) show large jumps between grade9 and psa10 that look like thin-sample anomalies rather than real market consensus - spot-check on the live site before relying on those two specifically."
+  "note": "Grade 9 and PSA 10 are PriceCharting's own price points and for rarely-traded cards they can rest on a few sales, so large jumps between ungraded, grade9 and psa10 (e.g. a $0.25 card with a $325 grade9) are often thin-sample noise, not market consensus. Only the plain card is recorded for each id: PriceCharting's reverse-holo / Poke Ball / Master Ball / stamped / prize-pack / jumbo variants are not included. Two older entries (McDonald's 2018 Pikachu #4 and Chansey #10) have similar anomalies."
 }
