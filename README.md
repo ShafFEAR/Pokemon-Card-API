@@ -73,7 +73,7 @@ past snapshots, not a query.
 
 ```
 data/psa/
-  meta.json           source, scrape date, methodology, counts
+  meta.json           source, scrape date, PSA's own last-updated stamp, methodology, counts
   by-card-id.json     mirror card id -> [{ psaSpecId, psaSetId, description, cardNumber,
                        variantTag, matchConfidence, grades: {"7": .., "8": .., ... } }]
                        (a list, not a single object - PSA prices print-run variants like
@@ -88,6 +88,13 @@ Only grades NM 7 / NM-MT 8 / MT 9 / GEM-MT 10 are here (and not every card has a
 (see `matchConfidence`, and `meta.json`'s `matchMethod`), so treat a low-confidence entry
 as a lead to verify, not a certainty. Manually trigger a refresh anytime from the Actions
 tab (`workflow_dispatch`) instead of waiting for Monday.
+
+**How old the prices are:** `meta.json`'s `generatedAt` is only when *this repo* last
+scraped. PSA's own price guide carries a single site-wide "Last updated" stamp, recorded as
+`psaPricesLastUpdated` (and `psaPricesLastUpdatedText`, PSA's wording) - that is the real
+age of the numbers, and it can be far behind the scrape date (it read 6/24/2025 in
+October 2026, with no price changing between weekly snapshots). Show that, not
+`generatedAt`, as the data's age.
 
 **Not the same thing as `data/psa-cache.json`** right next to it - that one is an
 incremental cache of real per-scan lookups against PokemonPriceTracker.com, fed by a

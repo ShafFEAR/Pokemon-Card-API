@@ -1,5 +1,8 @@
 {
   "generatedAt": "2026-10-19T14:30:10.470086+00:00",
+  "psaPricesLastUpdated": "2025-06-24T08:16:34",
+  "psaPricesLastUpdatedText": "6/24/2025 8:16:34 AM",
+  "psaPricesLastUpdatedNote": "PSA's own site-wide 'Last updated' stamp, read from https://www.psacard.com/priceguide on each run (PSA gives no time zone). generatedAt above is only when WE scraped; THIS is how old the prices are. Show this, not generatedAt, as the data's age. Null if the stamp couldn't be read.",
   "source": "https://www.psacard.com/priceguide",
   "sourceNote": "Scraped from PSA's public Price Guide. PSA only publishes grades NM 7 / NM-MT 8 / MT 9 / GEM-MT 10 there (not every set shows all four), and only those grades appear here - grades 1-6, Authentic, and full auction history require a PSA/Collectors.com account login this project does not automate. This is a separate, independently-sourced dataset from data/psa-cache.json (which is fed by NEW POKEMON SCANNER's live PokemonPriceTracker.com lookups) - different source, different provenance, not merged. Regenerated on a schedule by .github/workflows/refresh-psa-data.yml; each commit that changes this data is effectively a dated snapshot, since this file always reflects only the latest scrape.",
   "totalPsaSets": 151,

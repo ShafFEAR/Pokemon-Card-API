@@ -6,7 +6,9 @@ from pathlib import Path
 from . import db
 
 
-def export(out_dir: Path):
+def export(out_dir: Path, psa_last_updated=(None, None)):
+    """psa_last_updated is psa_scraper.fetch_site_last_updated()'s (ISO string, original text) -
+    PSA's own freshness stamp, recorded in meta.json next to (and distinct from) our scrape date."""
     out_dir.mkdir(parents=True, exist_ok=True)
 
     with db.connection() as conn:
@@ -66,6 +68,13 @@ def export(out_dir: Path):
 
     meta = {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "psaPricesLastUpdated": psa_last_updated[0],
+        "psaPricesLastUpdatedText": psa_last_updated[1],
+        "psaPricesLastUpdatedNote": (
+            "PSA's own site-wide 'Last updated' stamp, read from https://www.psacard.com/priceguide on each "
+            "run (PSA gives no time zone). generatedAt above is only when WE scraped; THIS is how old the "
+            "prices are. Show this, not generatedAt, as the data's age. Null if the stamp couldn't be read."
+        ),
         "source": "https://www.psacard.com/priceguide",
         "sourceNote": (
             "Scraped from PSA's public Price Guide. PSA only publishes grades "

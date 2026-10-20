@@ -15,6 +15,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from psa import config, db, matcher, mirror_client, psa_catalog, psa_scraper  # noqa: E402
 from psa.export import export  # noqa: E402
+from psa.psa_client import PsaClient  # noqa: E402
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = REPO_ROOT / "data" / "psa"
@@ -31,13 +32,16 @@ def main():
     psa_catalog.sync_psa_pokemon_sets()
 
     print("\n== 3/4 Scraping PSA prices (~1 request/second, so this takes a few minutes) ==")
-    psa_scraper.sync_all_psa_prices()
+    client = PsaClient()  # shared, so the 1s Crawl-delay spacing holds across the stamp request and the scrape
+    psa_last_updated = psa_scraper.fetch_site_last_updated(client)
+    print(f"  PSA's own 'Last updated' stamp: {psa_last_updated[1] or 'not found'}")
+    psa_scraper.sync_all_psa_prices(client=client)
 
     print("\n== 4/4 Matching mirror cards to PSA variants ==")
     matcher.match_all()
 
     print(f"\n== Exporting to {OUT_DIR} ==")
-    export(OUT_DIR)
+    export(OUT_DIR, psa_last_updated=psa_last_updated)
 
     config.DB_PATH.unlink(missing_ok=True)
     print("\nDone.")

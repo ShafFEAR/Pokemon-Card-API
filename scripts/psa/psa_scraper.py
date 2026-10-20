@@ -21,6 +21,13 @@ from .psa_client import PsaClient
 PRICE_COLUMN_START = 3  # columns are: [icon, description, card number, ...grades]
 GRADE_HEADER_RE = re.compile(r"(\d{1,2})\s*$")
 
+# PSA's price-guide landing page carries ONE site-wide freshness stamp ("486,427 Current PSA Prices /
+# Last updated: 6/24/2025 8:16:34 AM") that the per-set pages don't have. It says nothing about time zone.
+PSA_GUIDE_HOME_URL = "https://www.psacard.com/priceguide"
+LAST_UPDATED_RE = re.compile(
+    r"Last updated:\s*(\d{1,2}/\d{1,2}/\d{4}\s+\d{1,2}:\d{2}:\d{2}\s*[AP]M)", re.IGNORECASE
+)
+
 VARIANT_KEYWORDS = [
     "1st Edition",
     "Shadowless",
@@ -77,6 +84,40 @@ def _parse_grade_headers(table):
     return grades
 
 
+def parse_site_last_updated(page_text):
+    """'... Last updated: 6/24/2025 8:16:34 AM ...' -> ('2025-06-24T08:16:34', '6/24/2025 8:16:34 AM').
+    Returns (None, None) when the stamp isn't there or isn't in that shape."""
+    m = LAST_UPDATED_RE.search(page_text)
+    if m is None:
+        return None, None
+    raw = re.sub(r"\s+", " ", m.group(1)).strip()
+    try:
+        return datetime.strptime(raw.upper(), "%m/%d/%Y %I:%M:%S %p").isoformat(), raw
+    except ValueError:
+        return None, None
+
+
+def fetch_site_last_updated(client):
+    """PSA's own "last updated" stamp for the whole price guide, as (ISO string, original text).
+
+    This is NOT when we scraped: the export's generatedAt is the run date, and PSA's guide can sit
+    unchanged for a long time under a weekly scrape (on 2026-10-19 PSA's stamp was still 6/24/2025,
+    and no price in our weekly snapshots had changed between 2026-09-07 and 2026-10-12). Consumers
+    that show a price age must use this, not generatedAt. Never raises - a missing stamp must not
+    fail the price export, it just comes back (None, None) and the export records null.
+    """
+    try:
+        resp = client.get(PSA_GUIDE_HOME_URL)
+        text = BeautifulSoup(resp.text, "html.parser").get_text(" ", strip=True)
+    except Exception as exc:  # noqa: BLE001
+        print(f"  [WARN] couldn't read PSA's 'Last updated' stamp: {exc}")
+        return None, None
+    parsed = parse_site_last_updated(text)
+    if parsed[0] is None:
+        print("  [WARN] PSA's price-guide page had no recognizable 'Last updated' stamp")
+    return parsed
+
+
 def scrape_set(client, psa_set):
     resp = client.get(psa_set["url"])
     soup = BeautifulSoup(resp.text, "html.parser")
@@ -124,7 +165,7 @@ def scrape_set(client, psa_set):
     return rows
 
 
-def sync_all_psa_prices(limit=None, slug_contains=None):
+def sync_all_psa_prices(limit=None, slug_contains=None, client=None):
     with db.connection() as conn:
         sets = [dict(r) for r in conn.execute("SELECT * FROM psa_sets ORDER BY year, slug").fetchall()]
 
@@ -137,7 +178,7 @@ def sync_all_psa_prices(limit=None, slug_contains=None):
         print("No PSA sets to scrape - run psa_catalog.sync_psa_pokemon_sets() first.")
         return 0, 0
 
-    client = PsaClient()
+    client = client or PsaClient()  # a caller can pass its own so the Crawl-delay spacing carries across both
     now = datetime.now(timezone.utc).isoformat()
     total_variants = 0
     total_prices = 0
