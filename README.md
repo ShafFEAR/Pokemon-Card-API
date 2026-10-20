@@ -112,7 +112,9 @@ PriceCharting is more recent, so a scanner can show it next to - or instead of -
 data/pricecharting/
   meta.json           source, attribution, method, read date, per-set counts, caveats
   by-card-id.json      mirror card id -> { name, number, setName, url, ungraded,
-                        grade9, psa10 }  (null = PriceCharting has no price there)
+                        grade9, psa10 }  (null = PriceCharting has no price there;
+                        older entries also carry readOn, their own read date, when it
+                        isn't the file-level pricesReadOn in meta.json)
   unmatched.json       cards with no PriceCharting product found (or that couldn't be
                         matched confidently), with why
 ```
