@@ -26,6 +26,7 @@ data/
   index/
     by-name.json         normalized card name -> [{ id, name, number, setId, setName }]
   psa/                   PSA graded-card prices - see "PSA graded-card prices" below
+  psa-cardfacts/         PSA most recent sale per grade, for cards with a CardFacts page - see below
   psa-cache.json         a *different*, unrelated cache - see that section too
   pricecharting/         PriceCharting ungraded / Grade 9 / PSA 10 prices (Scarlet & Violet and Sword & Shield eras) - see below
 ```
@@ -100,6 +101,33 @@ October 2026, with no price changing between weekly snapshots). Show that, not
 incremental cache of real per-scan lookups against PokemonPriceTracker.com, fed by a
 different app (NEW POKEMON SCANNER) via `scripts/sync_psa_cache.py`. Different source,
 different update rhythm, deliberately not merged with this bulk export.
+
+## PSA most recent sale prices (`data/psa-cardfacts/`)
+
+The **most recent sale price** per grade (1-10 + Authentic), with its date, from PSA's
+public [CardFacts](https://www.psacard.com/cardfacts) card pages - plus the average sale
+price, PSA's own price and population for each grade. Unlike Auction Prices Realized,
+CardFacts pages need no login. `.github/workflows/refresh-cardfacts-data.yml` runs it on
+the 1st of every month (08:00 UTC) and auto-commits any changes; trigger it from the
+Actions tab anytime. Takes ~25 minutes (one request per second, per PSA's robots.txt).
+
+```
+data/psa-cardfacts/
+  meta.json           source, scrape date, counts, methodology
+  by-card-id.json     mirror card id -> [{ cardfactsId, url, description, cardNumber,
+                       psaSetName, variantTag, matchConfidence,
+                       grades: {"10": { mostRecent, mostRecentDate, average, psaPrice,
+                                        population, suspect? }, "9": .., "Auth": .. } }]
+  unmatched.json      CardFacts cards not linked to a mirror card id (Japanese sets, odd
+                       promos) - same entry shape, no matchConfidence
+```
+
+**Coverage is small:** CardFacts only exists for ~1,400 Pokemon cards PSA chose to write
+up (mostly 1999-2005 WotC/early-ex era, nothing after 2020), so most mirror cards have no
+entry here. That's a PSA limitation - the rest have no public "most recent price" on
+psacard.com. A grade marked `"suspect": true` has a most recent sale more than 4x away
+from its average (usually a mislabeled listing) - prefer `average` for those. Card
+matching uses the same heuristic as `data/psa/`.
 
 ## PriceCharting prices (`data/pricecharting/`)
 

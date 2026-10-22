@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-10-20T02:41:10.068400+00:00",
+  "source": "https://www.psacard.com/cardfacts",
+  "sourceNote": "Scraped from PSA CardFacts card pages, which are public (no login) and show, per grade 1-10 + Authentic: the most recent sale price, average sale price, PSA's price and population. mostRecentDate is that sale's date, taken from the page's own sales list. CardFacts covers only a curated subset of mostly vintage cards - most Pokemon cards have no CardFacts page, and PSA's full Auction Prices Realized needs a Collectors.com login this project does not automate. A grade flagged suspect has a most recent sale more than 4x away from its average (likely a mislabeled listing). Separate from data/psa/ (Price Guide values, grades 7-10) - not merged. Regenerated monthly by .github/workflows/refresh-cardfacts-data.yml; each commit that changes this data is effectively a dated snapshot.",
+  "totalCardfactsSets": 78,
+  "totalChecklistEntries": 11539,
+  "cardPages": 1363,
+  "cardPagesScraped": 1363,
+  "cardPagesWithRecentSale": 1309,
+  "matchedToCards": 1285,
+  "matchedMirrorCardIds": 1066,
+  "unmatched": 78,
+  "matchMethod": "Same heuristic as data/psa/ (psa/matcher.py): sets by release year + set-name tokens (or card-number checklist), cards by number + name. Japanese sets are never matched (the mirror has no Japanese cards) and land in unmatched.json."
+}

@@ -27,11 +27,17 @@ class PsaClient:
         self._last_request_time = None
 
     def get(self, url, **kwargs):
+        return self._request("GET", url, **kwargs)
+
+    def post(self, url, **kwargs):
+        return self._request("POST", url, **kwargs)
+
+    def _request(self, method, url, **kwargs):
         if self._last_request_time is not None:
             elapsed = time.monotonic() - self._last_request_time
             if elapsed < self.delay:
                 time.sleep(self.delay - elapsed)
-        resp = self.session.get(url, timeout=30, **kwargs)
+        resp = self.session.request(method, url, timeout=30, **kwargs)
         self._last_request_time = time.monotonic()
         resp.raise_for_status()
         return resp

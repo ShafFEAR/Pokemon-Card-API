@@ -45,8 +45,20 @@ ABBREVIATIONS = {
 # near "2", and its number/name overlap with the original Base Set (base1,
 # which Base Set 2 deliberately reused numbers/art from) is genuinely
 # ambiguous to a heuristic.
+#
+# The rest are PSA CardFacts slugs (see psa/cardfacts_scraper.py). CardFacts
+# checklists only expose numbers for the few cards that have pages, so the
+# number-overlap fallback is easily fooled there (it put Expedition on Neo
+# Revelation), and "Fire Red" vs the mirror's "FireRed" never tokenizes equal.
 MANUAL_SET_OVERRIDES = {
     "2000-poke-mon-base-ii": "base4",
+    "2000-pokemon-neo-genesis-1st-edition": "neo1",
+    "2002-pokemon-expedition": "ecard1",
+    "2004-pokemon-ex-fire-red-leaf-green": "ex6",
+    "2000-pokemon-promo-black-star": "basep",
+    "2001-pokemon-promo-black-star": "basep",
+    "2016-pokemon-xy-black-star-promo": "xyp",
+    "2017-pokemon-sun-moon-black-star-promo": "smp",
 }
 
 
